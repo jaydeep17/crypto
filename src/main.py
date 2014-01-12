@@ -1,10 +1,12 @@
 from src import caesarCipher
+from src import freqAnalysis
 
 
 def main():
-    cipher = caesarCipher.encrypt('Jaydeep', 1)
-    cipher += 'aA'
-    print(caesarCipher.decrypt(cipher, 1))
+    text = 'iq ifcc vqqr fb rdq vfllcq na rdq cfjwhwz hr bnnb hcc hwwhbsqvqbre hwq vhlq'
+    arr = freqAnalysis.analyse(text)
+    print(arr)
+    print(freqAnalysis.englishLetterFreq())
 
 
 if __name__ == "__main__":
