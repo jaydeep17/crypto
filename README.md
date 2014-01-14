@@ -1,7 +1,12 @@
 crypto
 ======
 
-Basic implementations of cryptographic algorithms
+Basic implementations of cryptographic algorithms and attacks
+
+
+Dependencies
+------------
+* [nltk3](http://nltk.org/index.html) (Optional) [ needed only if you want to filter brute force results ]
 
 
 Note
