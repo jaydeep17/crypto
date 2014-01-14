@@ -1,5 +1,6 @@
 from operator import itemgetter
 
+
 def encrypt(text, key):
     txt = list(text)
     for i in range(len(txt)):
@@ -49,7 +50,7 @@ def smartBruteForce(cipherText, thresh):
         for token in tokens:
             if wordnet.synsets(token):
                 cnt += 1
-        ratio = cnt/len(tokens)
+        ratio = cnt / len(tokens)
         if ratio >= thresh:
             lst.append((i, plainText, ratio))
     return sorted(lst, key=itemgetter(2), reverse=True)

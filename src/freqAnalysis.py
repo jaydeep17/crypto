@@ -1,3 +1,6 @@
+from operator import itemgetter
+
+
 def analyse(text):
     """
     frequency analysis of the given text
@@ -17,7 +20,7 @@ def analyse(text):
             arr[c] = 1
             count += 1
     arr = {k: round((v * 100) / count, 3) for k, v in arr.items()}
-    return sorted(arr.items(), key=lambda x: x[1], reverse=True)
+    return sorted(arr.items(), key=itemgetter(1), reverse=True)
 
 
 def englishLetterFreq():
